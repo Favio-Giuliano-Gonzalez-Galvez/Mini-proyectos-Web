@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+		<style>
+			body{
+				position:static
+				;
+			}
+
+			#Img_fondo{
+				position: absolute;
+				left: -2%;
+				top: -2%;
+				width: 102%;
+				height: 102%;
+				user-select: none;
+				z-index: 0;
+			}
+
+			#formulario{
+				width: 650px;
+				height: 310px;
+				backdrop-filter: blur(100px);
+				position: absolute;
+				left: 30%;
+				top: 28%;
+				border-top-left-radius: 60px;
+				border-top-right-radius: 60px;
+				border-bottom-left-radius: 60px;
+				border-bottom-right-radius: 60px;
+				user-select: none;
+			}
+
+			#formulario #bsi{
+				position: absolute;
+				top: 65%;
+				left: 20%;
+				border-top-left-radius: 60px;
+				border-top-right-radius: 60px;
+				border-bottom-left-radius: 60px;
+				border-bottom-right-radius: 60px;
+				text-align: center;
+				width: 60px;
+				height: 25px;
+				font-size: 115%;
+				background-color: rgb(214, 28, 28);
+				color: white;
+				user-select: none;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			}
+
+			#formulario #bno{
+				position: absolute;
+				top: 65%;
+				left: 75%;
+				border-top-left-radius: 60px;
+				border-top-right-radius: 60px;
+				border-bottom-left-radius: 60px;
+				border-bottom-right-radius: 60px;
+				width: 60px;
+				height: 25px;
+				font-size: 115%;
+				background-color: rgb(204, 29, 29);
+				border-color: brown;
+				color: white;
+				user-select: none;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			}
+
+			#bsi:hover{
+				cursor: pointer;
+			}
+
+			#formulario #bno:hover{
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				left: 40%;
+			}
+
+			#formulario #bno:active{
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				left: 40%;
+			}
+
+			#formulario #checksi{
+				display: none;
+			}
+			
+			
+			#formulario #text{
+				position: absolute;
+				top: 15%;
+				left: 30%;
+				color: transparent;
+				user-select: none;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			}
+
+			#formulario #respsi{
+				position: absolute;
+				background: transparent;
+				color: transparent;
+				width: 210px;
+				height: 170px;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+				user-select: none;
+			}
+
+			#formulario #respsi #textsi{
+				position: absolute;
+				text-align: center;
+				top: 23%;
+				left: 0.3%;
+				font-size: 110%;
+				user-select: none;
+			}
+
+			#checksi:checked ~ #respsi{
+				background: red;
+				position: absolute;
+				top: 10%;
+				left: 35%;
+			}
+			#checksi:checked ~ #respsi #textsi{
+				color: wheat;
+			}
+
+			#foot{
+				position: absolute;
+				top: 125%;
+				left: 110%;
+				width: 220px;
+				color: rgb(255, 255, 255);
+				user-select: none;
+				background: rgb(165, 64, 64);
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+			}
+
+		</style>
+	<body ondragstart="return false">	
+		<img src="/love.jpg" id="Img_fondo">
+
+		<Form id="formulario">
+			<h2 id="text">QUIERES SER MI NOVIA?</h2>
+			<button id="bno">No</button>
+			<input type="checkbox" id="checksi">
+			<label for="checksi"><b id="bsi">Si</b></label>
+
+			<h3 id="respsi">
+				<b id="textsi">♥ Sabia que aceptarias,<br> te quiero harto ♥</b>
+			</h3>
+
+			
+			<footer>
+				<center><p id="foot">By: Favio Gonzalez Galvez<br>
+				Todos los derechos reservados.</p></center>
+			</footer>
+
+		</Form>
+
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+
+	<script>
+		gsap.to('#text',{
+			duration: 1.5,
+			color: "rgb(230, 11, 11)",
+		})
+	</script>
+
+</html>
