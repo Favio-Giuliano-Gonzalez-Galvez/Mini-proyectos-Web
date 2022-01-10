@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(90deg, #1F2F98, #479eb4 );
+    background-size: cover;
+}
+
+body #temporizador{
+    user-select: none;
+    display: inline-flex;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#temporizador .numeros{
+    padding: 35px;
+}
+
+.simbs{
+    font-size: 50px;
+    color: rgb(0, 252, 0);
+    cursor: pointer;
+    margin: 20px;
+}
+
+.simbs:hover{
+    background: black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.contadores{
+    font-size: 130px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+#botones .botones{
+    margin: 40px;
+    margin-top: 5px;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: linear-gradient(90deg, rgb(2, 0, 128), rgb(4, 161, 252));
+    color: white;
+    cursor: pointer;
+}
+
