@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(95deg, rgb(21, 21, 163), rgb(22, 252, 240));
+}
+
+body #hora{
+    color: white;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 450;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    padding: 0px;
+}
+
+@media (max-width: 1000px){
+    body #hora{
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 802px){
+    body #hora{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 505px){
+    body #hora{
+        position: fixed;
+        font-size: 30px;
+    }
+}
